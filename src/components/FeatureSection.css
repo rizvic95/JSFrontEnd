@@ -1,0 +1,119 @@
+/* General styling for feature section */
+.feature-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Better centering */
+    padding: 40px 0; /* Reduce padding for compactness */
+    margin-top: 100PX;
+}
+  
+.iphone-feature {
+    flex: 1;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 180px; /* Increase space between phone and feature content */
+}
+
+.iphone-feature-image {
+    max-width: 85%;
+    height: auto;
+}
+
+.feature-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align heading and feature cards to the left */
+}
+
+.feature-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 10px; /* Adjust to bring more to the left */
+    margin-bottom: 20px;
+    font-weight: bold; /* Make the title bold */
+}
+
+.feature-content p {
+    color: #777;
+    max-width: 700px; /* Reduced width for better alignment */
+    font-size: 14px;
+    line-height: 1.6;
+    margin-left: 10px; /* Adjust for better alignment */
+    margin-bottom: 30px; /* Space between paragraph and feature cards */
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Consistent spacing between feature cards */
+    align-items: flex-start; /* Align items at the top */
+}
+
+.feature-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start; /* Align icon and text to the top */
+    max-width: 330px; /* Reduced width for compact alignment */
+    gap: 20px; /* Space between icon and content */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0; /* Prevent icon from resizing */
+}
+
+.feature-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+}
+
+.feature-card-content h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold; /* Make card titles bold */
+}
+
+.feature-card-content p {
+    color: #777;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0; /* Remove default margin for better alignment */
+}
+
+/* Media Query for Mobile Adjustments */
+@media (max-width: 768px) {
+    .feature-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .iphone-feature {
+        margin: 0 0 30px 0; /* Remove right margin, add bottom margin */
+    }
+
+    .feature-content {
+        align-items: center;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .feature-card {
+        text-align: center; /* Center text alignment for mobile */
+    }
+}

@@ -1,0 +1,65 @@
+.newsletter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f6ff; /* Light blue background */
+    padding: 40px 90px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the component horizontally */
+  }
+  
+  /* Left side: Content with bell icon and text */
+  .newsletter-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Spacing between the bell icon and text */
+  }
+  
+  .notification-bell {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .newsletter-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap; /* Prevent wrapping of text */
+  }
+  
+  /* Right side: Form with input and button */
+  .newsletter-form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between input and button */
+  }
+  
+  .newsletter-input {
+    padding: 0.75rem;
+    border: 1px solid #e2e5f1;
+    border-radius: 6px;
+    font-size: 1rem;
+    flex: 1;
+    min-width: 250px; /* Ensure the input has enough width */
+  }
+  
+  .newsletter-input::placeholder {
+    color: #bbb;
+  }
+  
+  .subscribe-button {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #5750e6;
+  }
+  

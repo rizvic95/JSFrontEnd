@@ -1,0 +1,15 @@
+/* Footer container */
+.footer-container {
+    padding: 50px 50px;
+    text-align: center;
+    font-size: 0.875rem; /* Small text size */
+    color: #6c757d; /* Muted gray text */
+
+  }
+  
+  /* Footer text styling */
+  .footer-text {
+    margin: 0;
+    font-weight: 400;
+  }
+  

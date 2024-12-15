@@ -1,0 +1,55 @@
+/* How Does It Work Section Styling */
+.how-it-works-section {
+    background-color: #f3f6ff;
+    padding: 100px 20px; /* Space around the content */
+    text-align: center; /* Center-align the section */
+  }
+  
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .how-it-works-section h2 {
+    font-size: 2.5rem;
+    color:black;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  .phones-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}
+
+  
+.phone-image {
+  max-width: 120%;
+  height: auto;
+}
+
+
+  
+  .transaction-info {
+    margin-top: 20px;
+    color: #666;
+  }
+  
+  .transaction-info h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:black;
+  }
+  
+  .transaction-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #777;
+    max-width: 610px;
+  }
+  

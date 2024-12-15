@@ -1,0 +1,124 @@
+/* Header Component Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align left and right sections */
+  padding: 10px 50px;
+}
+
+/* Left Section: Logo and Navigation */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Space between the logo and navigation */
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between logo image and text */
+}
+
+.logo img {
+  height: 32px;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #333333;
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between navigation items */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  font-size: 1rem;
+  color: #333333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li:hover {
+  color: #6c63ff;
+}
+
+/* Actions Section */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #666666;
+  font-size: 0.9rem;
+}
+
+.dark-mode-toggle input[type="checkbox"] {
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 20px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: 1px solid #ddd;
+}
+
+.dark-mode-toggle input[type="checkbox"]:checked {
+  background: #6c63ff;
+}
+
+.dark-mode-toggle input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode-toggle input[type="checkbox"]:checked::before {
+  left: 22px;
+}
+
+/* Sign-in Button */
+.sign-in {
+  background-color: #6c63ff;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.sign-in:hover {
+  background-color: #4a30d4;
+}

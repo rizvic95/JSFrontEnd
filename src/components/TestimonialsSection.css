@@ -1,0 +1,47 @@
+/* Section wrapper */
+.testimonials-section {
+    background-color: #f3f6ff;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Content container */
+  .testimonials-content {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  /* Header section */
+  .testimonials-header {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .testimonials-header h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    max-width: 280px;
+  }
+  
+  /* Quotes container */
+  .testimonials-quotes {
+    flex: 2;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  /* Adjust individual quote cards */
+  .testimonials-quotes > div {
+    flex: 1;
+    max-width: 400px;
+  }
+  

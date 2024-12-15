@@ -1,0 +1,23 @@
+.logos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Space between logos */
+  margin: 20px;
+  margin-top: 80px;
+}
+
+.logo-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-container:hover {
+  transform: scale(1.1); /* Slightly increase the size when hovered */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  cursor: pointer;
+}
+
+.logo-image {
+  width: 100%;
+  height: auto;
+}

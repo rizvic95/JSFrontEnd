@@ -1,0 +1,37 @@
+/* Button.css */
+
+.button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  /* Primär stil */
+  .button.primary {
+    background-color: #6c63ff;
+    color: white;
+  }
+  
+  .button.primary:hover:not(:disabled) {
+    background-color: #5b52e6;
+  }
+  
+  /* Sekundär stil */
+  .button.secondary {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .button.secondary:hover:not(:disabled) {
+    background-color: #e0e0e0;
+  }
+  

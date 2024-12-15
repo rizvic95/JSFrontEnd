@@ -1,0 +1,115 @@
+/* Hero Section Component Styles */
+
+.hero-background {
+    width: 100%;
+    background: linear-gradient(to bottom, #ffffff, #f5f1fe); /* Full-width gradient */
+    position: relative;
+  }
+
+.wrapper {
+    max-width: 1440px; /* Limit the width of the main content */
+    margin: 0 auto; /* Center the main content */
+    padding: 0 20px; /* Provide some side padding for better alignment */
+  }
+  
+  /* Centering the content inside the hero-background */
+  .custom-hero-section {
+    max-width: 1440px; /* Set the maximum width for your content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 150px 80px 0px 0px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-hero-section .hero-text {
+    flex: 1;
+    max-width: 500px;
+    z-index: 2;
+    margin-bottom: 240px; /* Move the text upwards */
+}
+
+  
+  .custom-hero-section .hero-text h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+  
+  .custom-hero-section .hero-text p {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 30px;
+    max-width: 400px;
+  }
+  
+  .custom-hero-section .hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 0px;
+  }
+  
+  .custom-hero-section .store-button {
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .custom-hero-section .hero-images {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; /* Justera detta till flex-start så att telefonerna kan placeras oberoende */
+    position: relative;
+    margin-left: 50px; /* Justera detta värde för bättre balansering */
+  }
+  
+  .custom-hero-section .iphone-image {
+    max-height: 500px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-hero-section .iphone-image:first-child {
+    margin-right: -20px; /* Create slight overlap with the second phone */
+    margin-top: 70px; /* Reduced to bring phones to align with section bottom */
+    z-index: 1;
+    max-height: 430px;
+}
+
+.custom-hero-section .iphone-image:last-child {
+    margin-left: -100px; /* Overlapping the second phone with the first */
+    z-index: 2; /* Bring the second phone in front */
+    
+}
+  
+  
+  @media (max-width: 1024px) {
+    /* Anpassa för mindre skärmar */
+    .custom-hero-section {
+      flex-direction: column;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    .custom-hero-section .hero-text {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .custom-hero-section .hero-images {
+      width: 100%;
+      justify-content: center;
+      position: relative;
+    }
+  
+    .custom-hero-section .iphone-image {
+      position: relative;
+      max-height: 300px;
+      left: 0;
+      margin-bottom: 20px;
+    }
+  }

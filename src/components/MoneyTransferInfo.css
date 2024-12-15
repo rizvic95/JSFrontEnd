@@ -1,0 +1,124 @@
+/* Container för den första sektionen */
+.money-transfer-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Info-sektionen */
+.info-section {
+  flex: 1;
+}
+
+.info-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 150px;
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-section li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.info-section li .icon {
+  color: #6c63ff;
+  margin-right: 10px;
+}
+
+.learn-more-button {
+  background-color: #6c63ff;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.learn-more-button:hover {
+  background-color: #5750e6;
+}
+
+/* Graf-sektionen */
+.graph-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.graph-section img {
+  width: 80%;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+/* Vänster bild */
+.left-image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.left-image {
+  max-width: 500px;
+  border-radius: 12px;
+}
+
+/* Höger sektion med ikoner */
+.right-info-section {
+  flex: 1;
+  text-align: left;
+}
+
+.right-info-section h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 60px;
+}
+
+.info-icons {
+  display: flex;
+  justify-content: space-between; /* Distribute the cards horizontally */
+  align-items: center;
+  gap: 1.5rem; /* Add spacing between cards */
+  margin-top: 2rem;
+}
+
+.icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1rem;
+}
+
+.icon-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
+.icon-card p {
+  color: #6e6e7a; /* Soft gray text color */
+  font-size: 1rem; /* Standard font size */
+  line-height: 1.5; /* Add line spacing for readability */
+  max-width: 250px;
+  margin-bottom: 50px;
+  
+}
